@@ -29,7 +29,7 @@ function BackToTop(props) {
 
   const scrollUp = () => {
     if (scrollId) {
-      const scroller = document.querySelector("#importSummay");
+      const scroller = document.querySelector(`#${scrollId}`);
       scroller.scrollTo({
         top: 0,
         behavior: "smooth",

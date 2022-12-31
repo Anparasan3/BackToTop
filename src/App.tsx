@@ -1,5 +1,5 @@
 import './App.css'
-import BackToTop from './BackToTop/BackToTop'
+import BackToTop from './back-to-top/BackToTop'
 import BoxContent from "./components/BoxContent"
 
 function App() {

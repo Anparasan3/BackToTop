@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import "./backToTop.css";
 
-const BackToTop = (props: { scrollId?: string }) => {
-  const { scrollId } = props;
+const BackToTop = (props: { scrollId?: string, progressStyle?: object }) => {
+  const { scrollId, progressStyle } = props;
   const [backToTopBtn, setBackToTopBtn] = useState<boolean>(false);
 
 
@@ -58,8 +58,8 @@ const BackToTop = (props: { scrollId?: string }) => {
   return (
     <div>
       {backToTopBtn && (
-        <div id="progress" onClick={() => scrollUp()}>
-          <span id="progress-value">&#x1F815;yess</span>
+        <div id="progress" onClick={() => scrollUp()} style={progressStyle}>
+          <span id="progress-value">&#x1F815;</span>
         </div>
       )}
     </div>

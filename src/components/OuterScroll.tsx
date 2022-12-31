@@ -6,7 +6,10 @@ interface BoxContentProps {
 }
 
 const containerStyle = {
-  height: "80vh", width: "100%", display: "flex", alignItems: "center", justifyContent: "center"
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  height: "80vh",
 }
 
 const BoxContent: React.FC<BoxContentProps> = (props) => {
